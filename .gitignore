@@ -1,0 +1,12 @@
+data/*
+!data/one-million.zip
+!data/twenty-th.zip
+kge_embeddings/*
+structured_training_data/*
+
+__pycache__/
+__pycache__/*.pyc
+**/__pycache__/
+*.pyc
+training_metrics_fold*.json
+*.pt
