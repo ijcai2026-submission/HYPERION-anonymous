@@ -27,12 +27,15 @@ The knowlegde graph triples and the initial embeddings for both subgraphs can be
 - twenty-th.zip: Exclusively the \textit{sideeffect} relation.
 - one-million.zip: Multiple relation types, including association, interaction, drug-drug, and drug-target.
 
-For the full DRKG, the triples and embeddings can be found at [Google Drive](https://drive.google.com/file/d/1_EVLwYw85Y4IQnecdp9YlnvXz2GSie4_/view?usp=sharing ).
+For the full DRKG, the triples and embeddings can be found at [Google Drive](https://drive.google.com/file/d/1_EVLwYw85Y4IQnecdp9YlnvXz2GSie4_/view?usp=sharing).
 
 To generate the initial embeddings for the full DRKG, (and how the subgraph embeddings were learned), https://github.com/DeepGraphLearning/KnowledgeGraphEmbedding was used, with a command like:
 ```bash
 python -u run.py --do_train --do_valid --do_test --data_path DRKG --model RotatE -n 256 -b 1024 -d 100 -g 24.0 -a 1.0 -adv -lr 0.0001 --max_steps 150000 -save models/RotatE_DRKG --test_batch_size 16 -de
 ```
+
+### Comparison
+In order to compare the performance with other methods (SNRI and GraIL), some modifications were made to the code, allowing for comparison on the smaller subgraph (twenty-th.zip). The modified code and the train/test/validation sets can be found at [Google Drive](https://drive.google.com/file/d/1cHW5-un-RhmD0W1MhyAmounMQ5Ma-m9e/view?usp=sharing).
 
 ## Requirements
 The code has been tested with Python 3.12.12 and the following package versions:
