@@ -35,7 +35,7 @@ python -u run.py --do_train --do_valid --do_test --data_path DRKG --model RotatE
 ```
 
 ### Comparison
-In order to compare the performance with other methods (SNRI and GraIL), some modifications were made to the code, allowing for comparison on the smaller subgraph (twenty-th.zip). The modified code and the train/test/validation sets can be found at [Google Drive](https://drive.google.com/file/d/1cHW5-un-RhmD0W1MhyAmounMQ5Ma-m9e/view?usp=sharing).
+In order to compare the performance with other methods (SNRI and GraIL), some modifications were made to the code, allowing for comparison on the smaller subgraph (twenty-th.zip). The modified code and the train/test/validation sets from this subgraph can be found at [Google Drive](https://drive.google.com/file/d/1cHW5-un-RhmD0W1MhyAmounMQ5Ma-m9e/view?usp=sharing). Part of this modification is the removal of k-fold cross validation, where instead a single split is used, with the train/test/validation sets found [here](https://drive.google.com/file/d/1cHW5-un-RhmD0W1MhyAmounMQ5Ma-m9e/view?usp=sharing).
 
 ## Requirements
 The code has been tested with Python 3.12.12 and the following package versions:
